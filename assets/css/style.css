@@ -1,0 +1,42 @@
+@import url('header.css');
+@import url('products.css');
+@import url('collection.css');
+@import url('footer.css');
+
+:root{
+    --fontTitle: 'Yanone Kaffeesatz', sans-serif;
+}
+:root{
+    --yellow: #ffc92f;
+}
+:root{
+    --black: #212121;
+}
+body{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fcf5e6;
+}
+.container {
+    max-width: 1296px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--black);
+}
+ul{
+  margin: 0;
+  padding: 0;  
+}
+ul>li{
+    list-style: none;
+}
+.socials__icon{
+    fill: #000;
+}
+
+
+  

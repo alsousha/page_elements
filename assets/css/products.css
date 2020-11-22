@@ -1,0 +1,101 @@
+ul.filter{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 105px;
+}
+a.filter__item-link, .btn {
+    display: inline-block;
+    padding: 10px 24px;
+    text-transform: uppercase;
+    font-family: var(--fontTitle);
+    
+}
+a.filter__item-link:hover, .btn{
+    color: #d82727;
+} 
+
+
+
+.filter__item-link-active a.filter__item-link, .btn{
+    background-color: #1b1b1b;
+    color: var(--yellow);
+}
+ul.products__list{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -27px;
+    margin-bottom: 150px;
+}
+li.products__item {
+    width: 304px;
+    height: 388px;
+    background-color: var(--yellow);
+    margin-bottom: 35px;
+    margin-left: 27px;
+    position: relative;
+}
+.products__item.products__item--color-black {
+    background-color: #1b1b1b;
+}
+li.products__item.products__item--size-big {
+    width: 633px;
+    height: 549px;
+}
+.products__price {
+    width: 127px;
+    border-left: 3px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 47px solid #232323;
+    position: absolute;
+    top: 18px;
+    left: -10px;
+    transform: rotate(-2deg);
+}
+.products__item.products__item--color-black .products__price{
+    border-top-color: var(--yellow);
+}
+.products__price--amount {
+    font-size: 30px;
+    font-family: var(--fontTitle);
+    font-weight: 600;
+    color: #fff;
+    position: absolute;
+    top: -39px;
+    left: 28px;
+    transform: rotate(2deg);
+}
+
+.products__content {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img {
+    max-width: 90%;
+    max-height: 100%;
+    display: block;
+}
+.products__desc {
+    background-color: rgba(35, 35, 35, 0.8);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px 37px;
+    transform: translateY(100%);
+    transition: transform .3s;
+    text-align: center;
+}
+li.products__item:hover .products__desc {
+    transform: translateY(0%);
+}
+.product__desc-text {
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
